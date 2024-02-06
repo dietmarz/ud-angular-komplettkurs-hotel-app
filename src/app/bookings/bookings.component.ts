@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Booking} from "../booking";
+import {Bookings} from "../mock-booking";
 
 @Component({
   selector: 'app-bookings',
@@ -11,14 +12,7 @@ export class BookingsComponent implements OnInit {
   constructor() { }
 
 
-  booking : Booking = {
-    id: 1,
-    name : "dietmar",
-    roomNumber: 100,
-    startDate: new Date(),
-    endDate: new Date("2024-01-19")
-
-  }
+  bookings = Bookings;
 
   ngOnInit(): void {
   }
